@@ -1,11 +1,16 @@
 const Header = () => {
-  let name
-
   return (
     <>
-      <h2>Header</h2>
-
-      {name}
+      <h2
+        style={{
+          fontSize: '100px',
+          color: 'red',
+          height: '300px',
+          background: 'white',
+        }}
+      >
+        Header
+      </h2>
     </>
   )
 }
