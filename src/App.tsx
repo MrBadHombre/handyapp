@@ -1,16 +1,26 @@
-import Header from './Components/header'
+import { Button, buttonVariants } from './components/ui/button'
 
-import Button from '@mui/material/Button'
+import {
+  type CarouselApi,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from './components/ui/carousel'
 
 function App() {
   return (
     <>
-      <Button style={{ color: 'white', height: '200px', padding: '50px' }}>
-        Button
-      </Button>
-      <Button style={{ color: 'yellow' }}>Button</Button>
+      <Button>Click me</Button>
 
-      <Header />
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem className='basis-1/3'>item 1</CarouselItem>
+          <CarouselItem className='basis-1/3'>item 2</CarouselItem>
+          <CarouselItem className='basis-1/3'>item 3</CarouselItem>
+        </CarouselContent>
+      </Carousel>
     </>
   )
 }
