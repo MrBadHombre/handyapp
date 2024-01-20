@@ -3,7 +3,7 @@ import { Theme } from '@radix-ui/themes'
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <h1>Hello world!</h1>
       <Theme>
         <Dialog.Root>
           <Dialog.Trigger>open</Dialog.Trigger>
